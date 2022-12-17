@@ -20,4 +20,4 @@ Copia el codigo largo
 
 y lo añades en el código de php
 
-$client_id = ""; // TOKEN AQUÍ
+$token = ""; // TOKEN AQUÍ
