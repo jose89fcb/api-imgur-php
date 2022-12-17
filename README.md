@@ -7,6 +7,7 @@ copia el código te hara falta para obtener el token...
 ingresa el client_id en el siguiente parametro:
 
 https://api.imgur.com/oauth2/authorize?client_id=CLIENT ID AQUÍ&response_type=token
+<br>
 una vez añadido copia la url completa y la pegas en el navegador.
 
 te aparecera otra pagina y le presionas al boton "ALLOW"
