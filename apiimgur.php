@@ -1,6 +1,6 @@
 <?php
 
-$client_id = ""; // TOKEN AQUÍ
+$token = ""; // TOKEN AQUÍ
 $imgur = $_GET["imgur"];
 $file = file_get_contents($imgur);
   
@@ -13,7 +13,7 @@ $file = file_get_contents($imgur);
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL, 'https://api.imgur.com/3/image.json');
   curl_setopt($curl, CURLOPT_TIMEOUT, $timeout);
-  curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . $client_id));
+  curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . $token));
   curl_setopt($curl, CURLOPT_POST, 1);
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $pvars);
