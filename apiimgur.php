@@ -19,14 +19,14 @@ $file = file_get_contents($imgur);
   curl_setopt($curl, CURLOPT_POSTFIELDS, $pvars);
   $out = curl_exec($curl);
   curl_close ($curl);
-   $pms = json_decode($out,true);
-  $url=$pms['data']['link'];
+   $imgur = json_decode($out,true);
+  $url=$imgur['data']['link'];
   if($url!=""){
    echo "<h2>Imagen subida!</h2>";
    echo "<img src='$url'/>";
   }else{
    echo "<h2>Ocurrió un problema :(</h2>";
-   echo $pms['data']['error'];  
+   echo $imgur['data']['error'];  
   } 
  
 
