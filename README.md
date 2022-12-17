@@ -21,3 +21,9 @@ Copia el codigo largo
 y lo añades en el código de php
 
 $token = ""; // TOKEN AQUÍ
+
+
+Para usarlo Ejemplo:
+
+<br>
+localhost/imgur.php?imgur=URL DE LA IMAGEN
